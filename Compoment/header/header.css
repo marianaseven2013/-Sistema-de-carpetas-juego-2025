@@ -1,5 +1,120 @@
 .d1-header {
-    background-color: rgb(124, 245, 204);
-   
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.nombrel {
+    background-color: rgb(247, 250, 247);
+    display: grid; 
+    grid-template-columns: 5% 10% 20% 15% 50% 10%;
+    grid-template-rows: 5rem;
+}
+
+ .nombrel .ilo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(247, 250, 247);
+}
+
+.ilo img{
+    width: 50%;
+    height: 100%;
+
+    border-radius: 2px;
+}
+
+.nombrel .titu {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: left;
+    margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
 
 }
+
+.botones {
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-color: rgb(247, 250, 247);
+
+    display: grid;
+    grid-template-columns: repeat(4, 9rem);
+    grid-template-rows: 4.5rem;
+    gap: 1rem;
+    padding: 2px;
+}
+
+.botones .bo1 {
+    grid-column: 1/2;
+    background-color: rgb(59, 141, 59);
+    color: white;
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 5.3rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 3px 2px 3px 2px rgb(172, 172, 172);
+}
+
+
+
+.botones .bo2{
+    grid-column: 2/3;
+    background-color: rgb(103, 170, 86);
+    color: white;
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 5.3rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 3px 2px 3px 2px rgb(172, 172, 172);
+}
+
+.botones .bo3{
+    grid-column: 3/4;
+    background-color: rgb(75, 129, 30);
+    color: white;
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 5.3rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 3px 2px 3px 2px rgb(172, 172, 172);
+}
+.botones .bo4{
+    grid-column: 4/5;
+    background-color: rgb(71, 131, 52);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 5.3rem;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 3px 2px 3px 2px rgb(172, 172, 172);
+}
+.botones .bo4:hover{
+    transition: 0.1s;
+    background-color: rgb(231, 21, 21);
+}
+
+ .botones .bo1:hover{
+    transition: 0.1s;
+    background-color: rgb(28, 219, 28);
+}
+.botones .bo2:hover{
+    transition: 0.1s;
+    background-color: rgb(240, 225, 16);
+}
+
+.botones .bo3:hover{
+    transition: 0.1s;
+    background-color: rgb(247, 184, 12);
+}
+
