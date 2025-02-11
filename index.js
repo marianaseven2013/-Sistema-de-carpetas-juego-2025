@@ -21,6 +21,9 @@ d3Tablero.className = "d3-tablero"
 contenedor.appendChild(d3Tablero);
 d3Tablero.appendChild(cargarCartas());
 
+
+
+
 let d4Footer = document.createElement('div');
 d4Footer.className = "d4-footeer"
 contenedor.appendChild(d4Footer);
@@ -31,3 +34,11 @@ contenedor.appendChild(d4Footer);
 
 DOM.appendChild(contenedor);
  //Para que aparezca o se cree el div es decir en este caso este es el contenedor de todos los divs
+ //Evento para cada una de las cartas
+let todaslascartasdelDOM = document.querySelectorAll('.cada-carta');
+todaslascartasdelDOM.forEach(cargarCartas =>{
+    cargarCartas.addEventListener("click",()=>{
+        cargarCartas.classList.add("marcado");
+
+    });
+});

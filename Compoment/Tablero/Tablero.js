@@ -17,6 +17,7 @@ function cargarCartas(){
         div.appendChild(item(cadaLetra));
     });
 
+
     return div;
 }
 
