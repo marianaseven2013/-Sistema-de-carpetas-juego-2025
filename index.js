@@ -1,4 +1,5 @@
 import { cargarCartas } from "./Compoment/Tablero/Tablero.js";
+import { cuadroheader } from "./Compoment/header/header.js";
 
 let DOM = document.querySelector("#root");
 
@@ -10,6 +11,7 @@ contenedor.className = "connt"
 let d1Header = document.createElement('div');
 d1Header.className = "d1-header"
 contenedor.appendChild(d1Header);
+d1Header.appendChild(cuadroheader());
 
 
 let d2Progreso = document.createElement('div');
