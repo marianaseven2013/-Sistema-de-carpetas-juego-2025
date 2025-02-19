@@ -1,3 +1,13 @@
+function cargarHeader(){
+     let d1Header = document.createElement('div');
+    d1Header.className = "d1-header"
+    d1Header.appendChild(cuadroheader());
+
+    return d1Header;
+}
+
+export {cargarHeader}
+
 function cuadroheader (){
     let header = document.createElement('header');
     header.className = "nombrel"

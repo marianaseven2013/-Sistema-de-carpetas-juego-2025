@@ -1,20 +1,13 @@
-
-function mezclarCartas(){
-
     let cartaPar1 = ['🍊','🍋','🍐','🥝','🍏','🥥','🍋‍🟩','🫒'];
     let cartaPar2 = ['🍊','🍋','🍐','🥝','🍏','🥥','🍋‍🟩','🫒'];
+    let todaslasCartas = cartaPar1.concat(cartaPar2);
 
-    let cartas = cartaPar1.concat(cartaPar2);
 
-    for (let indice = 0; indice < cartas.length; indice++) {
-        let numAle = Math.floor(Math.random() * cartas.length); 
-        [cartas[indice], cartas[numAle]] = [cartas[numAle], cartas[indice]];
-    }
-    return cartas;
+   /*  for (let indice = 0; indice < array.length; indice++) {
+        let numAle = Math.floor(Math.random() * array.length);
+        [array[indice], array[numAle]] = [array[numAle], array[indice]];
+    } */
 
-}
-
-let todaslasCartas = mezclarCartas();
 
 
 export { todaslasCartas };

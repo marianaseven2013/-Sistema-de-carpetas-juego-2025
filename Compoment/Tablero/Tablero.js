@@ -1,36 +1,21 @@
 import { todaslasCartas } from "./data.js";
+import { mesclarCartas } from "./funcionesCartas.js";
+import { mostrarCartas } from "./funcionesCartas.js";
+import { Cartita } from "./itemCarta.js";
 
-function item(contenido) {
-    let div = document.createElement('div');
-    div.className = "cada-carta";
 
-    let adl = document.createElement('div');
-    adl.className = "front";
-    adl.textContent = ""; 
-
-    let back = document.createElement('div');
-    back.className = "back";
-    back.textContent = contenido; 
-
-    div.appendChild(adl);
-    div.appendChild(back);
-
-    div.addEventListener('click', () => {
-        div.classList.toggle('flipped');
-    });
-
-    return div;
+function CargarTablero(){
+    let d3Tablero = document.createElement('div');
+    d3Tablero.className = "d3-tablero";
+    let muestradeC = mostrarCartas(todaslasCartas);
+    let mesclaAmacen = mesclarCartas(muestradeC);
+    d3Tablero.appendChild(Cartita(mesclaAmacen,mesclaAmacen));
+    
+    return d3Tablero;
 }
 
-function cargarCartas() {
-    let div = document.createElement('div');
-    div.className = "cargar-tablero";
+export {CargarTablero};
 
-    todaslasCartas.forEach((cadaLetra) => {
-        div.appendChild(item(cadaLetra));
-    });
 
-    return div;
-}
 
-export { cargarCartas };
+
